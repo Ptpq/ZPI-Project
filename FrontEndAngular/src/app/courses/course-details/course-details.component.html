@@ -1,0 +1,28 @@
+<div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <table class="co-table table table-striped">
+              <thead>
+                <tr><h3>Lista filmów</h3></tr>
+              </thead>
+              <tbody *ngFor="let video of videos"  class="row-course" [routerLink]="['', video.idVideo]">
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td class="th-picture" rowspan="2"><img class="picture" src="../../../assets/img/math1.jpg" alt="math"></td>
+                  <td class="title"> {{ video.title }} </td>
+                  <td class="th-details">Autor: John</td>
+                </tr>
+                <tr>
+                  <td class="td-description"> {{ video.description }} </td>
+                  <td> <button (click)="routeToVideoPlayer(video.idVideo)" class="btn btn-blue btn-sm">
+                    <span class="glyphicon glyphicon-plus pull-left">&nbsp;</span>Otwórz </button> </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>

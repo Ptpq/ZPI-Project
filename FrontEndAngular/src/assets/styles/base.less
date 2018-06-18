@@ -1,0 +1,115 @@
+/* Better box-sizing */
+*, *:before, *:after {
+    box-sizing: border-box;    
+}
+
+/*
+blue: #3e63df
+yellow: #ffe522
+headings: #333
+text: #808080
+*/
+
+
+/* body */
+body {
+    color: #808080;
+    font: 18px / 1.4 Lato, Arial Helvetica, sans-serif;
+    margin-top: 72px;
+}
+
+/* Text */
+p {
+    margin: 0 0 12px;
+}
+
+
+
+
+h1, h2, h3 {
+    line-height: 1.2;
+}
+
+h4, h5, h6 {
+    line-height: 1.3;
+}
+
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #3e6edf;
+}
+
+/* Normalize buttons and form fields */
+button, input, optgroup, select, textarea {
+    font-family: Lato, Arial Helvetica, sans-serif;
+    line-height: 1.4;
+}
+
+/* Forms */
+input, select, textarea {
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+}   
+
+
+/* Color box */
+.box {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+.box-blue {background: #3e63df}
+.box-yellow {background: #ffe522}
+.box-dark {background: #333}
+.box-gray {background: #808080}
+
+/*Icons*/
+.icon {
+    font-size: 70px;
+    margin: 0 6px;
+    color: #3e63df;
+}
+
+/*Fonts containter*/
+.fonts-container {
+    margin: 80px auto;
+    margin-top: 80px;
+    width: 600px;    
+}
+
+
+
+/* GRID */
+.container {
+    max-width: 1170px;
+    width: 100;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container:after,
+.cf:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.col-1-2, .col-1-3, .col-2-3 { float: left;}
+
+.col-1-2 { width: 50%;} 
+.col-1-3 { width: 33.3333%;} 
+.col-2-3 { width: 66.6666%;}
+
+
+
+
+
+
+
+
+
+

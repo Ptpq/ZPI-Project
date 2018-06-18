@@ -1,0 +1,56 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+FrontEndAngular/.dist/desktop
+FrontEndAngular/.dist/mobile
+FrontEndAngular/dist
+FrontEndAngular/.temp
+FrontEndAngular/tmp
+FrontEndAngular/out-tsc
+
+# dependencies
+FrontEndAngular/node_modules
+
+# IDEs and editors
+FrontEndAngular/.idea
+FrontEndAngular/.project
+FrontEndAngular/.classpath
+FrontEndAngular/.c9/
+FrontEndAngular/*.launch
+FrontEndAngular/.settings/
+FrontEndAngular/*.sublime-workspace
+
+# IDE - VSCode
+FrontEndAngular/.vscode/*
+FrontEndAngular/!.vscode/settings.json
+FrontEndAngular/!.vscode/tasks.json
+FrontEndAngular/!.vscode/launch.json
+FrontEndAngular/!.vscode/extensions.json
+
+# misc
+FrontEndAngular/.sass-cache
+FrontEndAngular/connect.lock
+FrontEndAngular/coverage
+FrontEndAngular/libpeerconnection.log
+FrontEndAngular/npm-debug.log
+FrontEndAngular/testem.log
+FrontEndAngular/typings
+
+# e2e
+FrontEndAngular/e2e/*.js
+FrontEndAngular/e2e/*.map
+
+# System Files
+FrontEndAngular/.DS_Store
+FrontEndAngular/Thumbs.db
+
+ServerAspNetCore/.vs
+ServerAspNetCore/ServerAspNetCore/bin
+ServerAspNetCore/ServerAspNetCore/appsettings.production.json
+ServerAspNetCore/ServerAspNetCore/Properties/PublishProfiles/
+FrontEndAngular/.dist
+
+FrontEndAngular/src/app/**/*.js
+FrontEndAngular/src/app/**/*.js.map
+ServerAspNetCore/ServerAspNetCore/obj
+ServerAspNetCore/ServerAspNetCore/*.log

@@ -1,0 +1,7 @@
+@import '../../../assets/styles/base.less';
+@import '../../../assets/styles/buttons.less';
+
+.img-carousel {
+    max-width: 1920px;
+    max-height: 600px;
+}

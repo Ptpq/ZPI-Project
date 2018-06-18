@@ -1,0 +1,6 @@
+@import '../../../assets/styles/base.less';
+@import '../../../assets/styles/buttons.less';
+
+.form-group {
+    width: 80%;
+}

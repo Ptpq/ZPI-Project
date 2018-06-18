@@ -1,0 +1,20 @@
+<div id="pageheader" class="container">
+  <section class="menu-brand">
+      <a href="index.html">
+          <img src="../../../assets/img/logo.png" alt="logo" height="70" width="100">
+      </a>
+  </section>
+  
+  <nav class="menu-links">
+      <ul>
+          <li><a href="index.html">Strona główna</a></li>
+          <li [routerLink]="['courses-list']"><a>Kursy</a></li>
+          <li [routerLink]="['new-courses']"><a>Utwórz kurs</a></li>
+          <li><a href="#footer">Kontakt</a></li>
+          <!-- <li [routerLink]="['user-course-list']"><a>Moje konto</a></li> -->
+          <li [routerLink]="['user-account']"><a>Moje konto</a></li>
+          <li *ngIf="isUserLog"><button (click)="logout()" class="btn btn-info btn-lg" >Wyloguj</button></li>
+          <li *ngIf="!isUserLog" [routerLink]="['login']" class="btn btn-info btn-lg">Zaloguj</li>
+      </ul>
+  </nav>
+</div>

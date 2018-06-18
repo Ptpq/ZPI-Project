@@ -1,0 +1,57 @@
+@import '../../../assets/styles/base.less';
+/* Header */
+
+.page-header {
+    color: #fff;
+    box-shadow: 0 0 24px rgba(0,0,0,0.15);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 999;
+}
+
+/* Menu brand */ 
+.menu-brand {
+    float: left;
+}
+
+.menu-brand a {
+    display: block;
+    margin: 12 0 0;
+}
+
+/* Menu-links */
+.menu-links {
+    float: right;
+    margin: 12px 0;
+}
+
+.menu-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-links li {
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.menu-links a {
+    color: #8f8f8f;
+    font-weight: bold;
+    display: block;
+    padding: 12px 20px;
+}
+
+.menu-links a:hover,
+.menu-links .active {
+    color: #fff;
+    background: #3e6edf;
+}
+
+
+
+
+

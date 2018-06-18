@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="form-group">
+    <button (click)="showAndHideForm()" class="btn-md btn-success glyphicon glyphicon-plus">
+      &nbsp;Dodaj część</button>
+  </div>
+
+
+  <div class="row" *ngIf="formVisible">
+    <div>
+      <div class="form-group">
+          <label for="title">Tytuł części</label>
+          <input type="text" id="title" class="form-control" placeholder="tytuł..." required>
+        </div>
+
+      <div class="form-group">
+        <label for="description">Opis</label>
+        <textarea type="text" id="tags" class="form-control" placeholder="opis..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="file">Plik</label>
+        <input id="file" name="file" type="file">
+      </div>
+      
+      <div class="form-group">
+        <button class="btn-danger">Zapisz</button>
+      </div>
+    </div>
+  </div>
+</div>

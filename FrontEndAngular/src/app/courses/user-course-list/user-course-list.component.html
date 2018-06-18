@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <table class="co-table table table-striped">
+          <thead>
+            <tr><h3>Twoje kursy</h3></tr>
+          </thead>
+          <tbody *ngFor="let course of courses" class="row-course" [routerLink]="['', course.idCourse]">
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td class="th-picture" rowspan="2"><img class="picture" src="../../../assets/img/math1.jpg" alt="math"></td>
+              <td class="title"> {{ course.title }} </td>
+              <td class="th-details">Autor: John</td>
+            </tr>
+            <tr>
+              <td class="td-description"> {{ course.description }} </td>
+              <td> <button class="btn btn-blue btn-sm">
+                <span class="glyphicon glyphicon-check pull-left">&nbsp;</span>Wejdz </button> </td>
+            </tr>
+          </tbody>
+        </table>
+  
+        <ng-template #noCoursesInfo>
+          <div class="no-courses-info">
+            <p>Obecnie nie mamy dla Ciebie kursów w ofercie</p>
+          </div>
+        </ng-template>
+      </div>
+    </div>
+  </div>
